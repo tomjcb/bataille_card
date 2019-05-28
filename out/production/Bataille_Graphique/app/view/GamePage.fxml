@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane styleClass="bg-cardGame" stylesheets="@../resource/stylesheet/StyleGame.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.GamePage">
+   <children>
+      <BorderPane prefHeight="730.0" prefWidth="1290.0">
+         <top>
+            <StackPane prefHeight="100.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="btnTourSuivant" mnemonicParsing="false" onAction="#showCard" styleClass="button-default" stylesheets="@../resource/stylesheet/StyleMenu.css" text="Coup Suivant" />
+                        <Button fx:id="btnGoToTheEnd" mnemonicParsing="false" onAction="#goToEndOfGame" text="Aller à la fin de la partie" />
+                     </children>
+                  </VBox>
+               </children>
+            </StackPane>
+         </top>
+         <left>
+            <StackPane alignment="CENTER_RIGHT" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <top>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label fx:id="cardJ1" styleClass="label-name" stylesheets="@../resource/stylesheet/StyleGame.css" text="Label" />
+                           </children>
+                        </VBox>
+                     </top>
+                     <bottom>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label fx:id="nomJ1" alignment="CENTER" styleClass="label-name" stylesheets="@../resource/stylesheet/StyleMenu.css" text="Carte du J1" />
+                              <Label fx:id="nbCartesJ1" styleClass="label-subtitle" stylesheets="@../resource/stylesheet/StyleMenu.css" text="Label" />
+                           </children>
+                        </VBox>
+                     </bottom>
+                  </BorderPane>
+               </children>
+            </StackPane>
+         </left>
+         <right>
+            <StackPane alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <top>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label fx:id="cardJ2" styleClass="label-name" stylesheets="@../resource/stylesheet/StyleGame.css" text="Label" />
+                           </children>
+                        </VBox>
+                     </top>
+                     <bottom>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label fx:id="nomJ2" styleClass="label-name" stylesheets="@../resource/stylesheet/StyleMenu.css" text="Carte du J2" />
+                              <Label fx:id="nbCartesJ2" styleClass="label-subtitle" stylesheets="@../resource/stylesheet/StyleMenu.css" text="Label" />
+                           </children>
+                        </VBox>
+                     </bottom>
+                  </BorderPane>
+               </children>
+            </StackPane>
+         </right>
+         <center>
+            <BorderPane prefHeight="543.0" prefWidth="890.0" BorderPane.alignment="CENTER">
+               <center>
+                  <Label fx:id="infoGame" contentDisplay="CENTER" styleClass="label-subtitle" stylesheets="@../resource/stylesheet/StyleMenu.css" text="Label" BorderPane.alignment="CENTER" />
+               </center>
+               <top>
+                  <StackPane alignment="BOTTOM_CENTER" prefHeight="103.0" prefWidth="890.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="nbCartesEnJeu" styleClass="label-subtitle" stylesheets="@../resource/stylesheet/StyleMenu.css" text="Label" />
+                     </children>
+                  </StackPane>
+               </top>
+               <bottom>
+                  <TextArea fx:id="infos" prefHeight="150.0" prefWidth="890.0" BorderPane.alignment="CENTER" />
+               </bottom>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
