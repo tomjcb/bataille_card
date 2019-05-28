@@ -1,0 +1,51 @@
+/* BEGIN: pane-container */
+.pane-container-MenuMain {
+    -fx-background-image: url("/app/resource/image/imgmenu.jpg");
+    -fx-background-size: 100% 100%;
+}
+
+.pane-container-WelcomePage {
+    -fx-background-image: url("/app/resource/image/background_Welcome.jpeg");
+    -fx-background-size: 100% 100%;
+}
+/* END: pane-container */
+
+/* BEGIN: label */
+.label-title-light {
+    -fx-font-size: 50px;
+    -fx-font-family: "sans-serif";
+    -fx-text-fill: #e5e0af;
+    -fx-effect: dropshadow(three-pass-box, black, 5, 0, 0, 0);
+}
+
+.label-title-dark {
+    -fx-font-size: 50px;
+    -fx-font-family: "sans-serif";
+    -fx-text-fill: black;
+    -fx-effect: dropshadow(three-pass-box, white, 5, 0, 0, 0);
+}
+
+.label-subtitle {
+    -fx-font-size: 20px;
+    -fx-font-family: "sans-serif";
+    -fx-text-fill: #e5e0af;
+    -fx-effect: dropshadow(three-pass-box, black, 5, 0, 0, 0);
+}
+
+.label-error {
+    -fx-font-size: 15px;
+    -fx-font-family: "sans-serif";
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, #ff5a58, 5, 0, 0, 0);
+}
+/* END: label */
+
+/* BEGIN: button */
+.button-default {
+    -fx-background-color: #a5a07b ;
+    -fx-font-family: "sans-serif";
+    -fx-text-fill: aliceblue;
+    -fx-font-size: 15px;
+    -fx-padding: 10 20 10 20;
+}
+/* END: button */

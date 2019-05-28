@@ -1,0 +1,79 @@
+/* BEGIN:  */
+.pane-welcome-container {
+    -fx-background-image: url("/app/resource/image/background_WelcomePage.png");
+    -fx-background-size: 100% 100%;
+}
+
+.pane-multilocal-container {
+    -fx-background-image:url("/app/resource/image/background_multiLocal.png");
+    -fx-background-size: 100% 100%;
+}
+
+.label-title {
+    -fx-font-size: 50px;
+    -fx-font-family: "sans-serif";
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, black, 5, 0, 0, 0);
+}
+
+.label-subtitle {
+    -fx-font-size: 20px;
+    -fx-font-family: "sans-serif";
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, black, 5, 0, 0, 0);
+
+}
+
+.label-name {
+    -fx-font-size: 15px;
+    -fx-font-family: "sans-serif";
+    -fx-text-fill: #e5e0af;
+    -fx-effect: dropshadow(three-pass-box, black, 5, 0, 0, 0);
+
+}
+
+.button-welcome {
+    -fx-background-color: #050923 ;
+    -fx-font-family: "sans-serif";
+    -fx-text-fill: aliceblue;
+    -fx-font-size: 15px;
+    -fx-padding: 10 20 10 20;
+}
+
+.gridpane-multilocal-player1 {
+}
+
+.button-place {
+    -fx-background-color: #050923 ;
+    -fx-font-family: "sans-serif";
+    -fx-text-fill: aliceblue;
+    -fx-font-size: 12px;
+    -fx-padding: 5 5 5 5;
+}
+
+.pane-place {
+    -fx-background-radius: 20px;
+    -fx-background-color: aliceblue;
+    -fx-font-family: "sans-serif";
+}
+
+.label-title-place {
+    -fx-font-size:18px;
+    -fx-font-weight:bold;
+}
+
+.label-subtitle-place {
+    -fx-font-size:14px;
+    -fx-font-weight:bold;
+}
+.label-error {
+    -fx-font-size:10px;
+}
+
+.cards {
+
+}
+
+.bg-cardGame{
+    -fx-background-image:url("/app/resource/image/background_cardGame.jpg");
+}
